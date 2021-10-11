@@ -17,8 +17,9 @@ const Cats = () => {
 
   return (
     <div>
+      <h1>Some Awesome Change</h1>
       {cats.map((c) => (
-        <div>
+        <div key={c.id}>
           <h1>{c.name}</h1>
         </div>
       ))}
