@@ -8,13 +8,13 @@ class Navbar extends React.Component {
     return (
       <Menu>
         <Link to="/">
-          <Menu.Item active={location.pathname == "/"}>Home</Menu.Item>
+          <Menu.Item active={location.pathname === "/"}>Home</Menu.Item>
         </Link>
         <Link to="/things">
-          <Menu.Item active={location.pathname == "/things"}>Things</Menu.Item>
+          <Menu.Item active={location.pathname === "/things"}>Things</Menu.Item>
         </Link>
         <Link to="/components">
-          <Menu.Item active={location.pathname == "/components"}>
+          <Menu.Item active={location.pathname === "/components"}>
             Components
           </Menu.Item>
         </Link>
