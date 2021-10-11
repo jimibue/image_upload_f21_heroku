@@ -13,4 +13,7 @@ Rails.application.routes.draw do
     get "users/:id", to: "users#show"
     put "users/:id", to: "users#update"
   end
+
+  # ensure that we alway render the index.html
+  get "*other", to: "static#index"
 end
