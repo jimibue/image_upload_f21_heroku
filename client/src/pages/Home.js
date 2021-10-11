@@ -15,6 +15,7 @@ import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orien
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
 import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 import JustImageUpload from "../components/JustImageUpload";
+import Cats from "../components/Cats";
 
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
@@ -52,6 +53,7 @@ export default function Home() {
   return (
     <div>
       <h1>Home</h1>
+      <Cats />
       <form onSubmit={handleSubmit}>
         <p>text</p>
         <input

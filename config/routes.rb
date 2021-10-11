@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
     post "memes1", to: "memes#create1"
 
+    get "cats", to: "cats#index"
+
     get "users", to: "users#index"
     get "users/:id", to: "users#show"
     put "users/:id", to: "users#update"
